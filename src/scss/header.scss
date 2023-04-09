@@ -283,7 +283,14 @@
 
 	// .menu__list
 
-	&__list {}
+	&__list {
+		@media (max-width:$tablet) {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: start;
+		}
+	}
 
 	// .menu__item
 
@@ -301,6 +308,7 @@
 	// .submenu__list
 
 	&__list {
+		display: none;
 		display: flex;
 		flex-direction: column;
 	}
@@ -373,3 +381,5 @@
 		}
 	}
 }
+
+//
